@@ -18,9 +18,9 @@ namespace SnakeAndLadder
             const int Snake = 3;
 
             Random random = new Random();
-            while (Position <= 100)
+            while (Position != 100)
             {
-                    int DieRoll = random.Next(1, 7);
+                int DieRoll = random.Next(1, 7);
                 Console.WriteLine($"Die Rolling : {DieRoll}");
 
                 int options = random.Next(1, 4);
